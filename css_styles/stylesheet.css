@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #efedf1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23eae7ef' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    /*font-size: 10px;*/
+    font-family: 'Montserrat', sans-serif;
+    /*text-transform: uppercase;*/
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:link {
+    color: #000000;
+    transition: color 170ms ease-in-out;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/**NAVIGATION**/
+
+.navmain {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlogo {
+    width: 170px
+}
+
+/*SUBMENU*/
+
+.submenu a:link {
+    position: relative;
+    display: inline-block;
+}
+
+.items:hover {
+    box-shadow: #efedf1;
+}
+
+.items {
+    display: none;
+    position: absolute;
+    background-color: #efedf1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23eae7ef' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.items a:link {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu:hover .items {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .25em;
+    display: block;
+}
+
+/*NAV LEFT */
+.navmain ul {
+    display: flex;
+}
+
+.navmain li {
+    padding: 10px;
+}
+
+.items a {
+    font-size: 13px;
+}
+
+/*PHOTOS*/
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;    
+}
+
+/*Create two equal columns that sits next to each other*/
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 20px 10px;
+}
+
+.column img {
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+/*Effect per image*/
+.image {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.image:hover {
+    opacity: 0.8;
+}
+
+.row1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;    
+}
+
+/*Create four equal columns that sits next to each other*/
+.column1 {
+    flex: 5m 0%;
+    max-width: 33%;
+    padding: 20px 20px;
+}
+
+.column1 img {
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column1 {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column1 {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
+/*SOCIAL*/
+.social {
+    margin: 100px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+    transition: color 170ms ease-in-out;
+}
+
+.links a i {
+    font-size: 3rem
+}
