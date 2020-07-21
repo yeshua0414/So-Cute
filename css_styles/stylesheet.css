@@ -211,3 +211,17 @@ ul {
 .links a i {
     font-size: 3rem
 }
+
+/*Content*/
+.Content .Tittle {
+    text-align: center;
+    margin: 100px 0;
+    padding-bottom: 50px;
+}
+
+.Content .Paragraph {
+    text-align: center;
+    justify-content: safe;
+    margin: auto;
+    font-size: 17px;
+}
