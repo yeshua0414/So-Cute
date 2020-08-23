@@ -38,6 +38,15 @@ ul {
 
 /**NAVIGATION**/
 
+.menu-buton {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    display: none;
+    z-index: 2;
+}
+
 .navmain {
     font-size: 13px;
     display: flex;
@@ -96,6 +105,33 @@ ul {
 
 .items a {
     font-size: 13px;
+}
+
+@media (max-width: 700px){
+    .menu-buton {
+        display: block;
+    }
+
+    .navmain ul.navmenu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #efedf1;
+        /*height: 100%;*/
+        padding: 30px;
+        transform: translatey(-400px);
+        transition: .5s ease-in-out;
+    }
+
+    .navmain ul.navmenu.show {
+        transform: translateY(20px);
+    }
+
+    .navmain ul.navmenu li {
+        padding: 20px;
+        font-size: 14px;
+    }
 }
 
 /*PHOTOS*/
@@ -224,4 +260,13 @@ ul {
     justify-content: safe;
     margin: auto;
     font-size: 17px;
+}
+
+.photoFinal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    width: 90%;
+    height: auto;
 }
